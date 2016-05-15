@@ -1,0 +1,16 @@
+{
+  "name": "hrysd.org",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss -c ./postcss.json"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss-cli": "^2.5.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.2.0"
+  }
+}
