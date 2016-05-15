@@ -1,0 +1,66 @@
+$main-color: #a3e9a4;
+$sub-color: #f8bbd0;
+
+$font-color: #37474f;
+$sub-font-color: #90a4ae;
+
+$mobile: 600px;
+
+html {
+  font-family: 'Hiragino Maru Gothic ProN', Meiryo, sans-serif;
+}
+
+body {
+  background: $main-color;
+  color: $font-color;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  h1 {
+    text-align: center;
+  }
+}
+
+main {
+  border-top: 2px solid $sub-color;
+  border-bottom: 2px solid $sub-color;
+  background-color: white;
+  flex: 1;
+
+  @media (max-width: $mobile) {
+    margin: 0px;
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: $font-color;
+    }
+
+    li {
+      margin-top: 15px;
+      font-size: 24px;
+      &:not(:last-child) {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $sub-font-color;
+      }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
