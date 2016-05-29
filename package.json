@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:html && npm run build:css",
+    "build:html": "cp index.html dist/index.html",
     "build:css": "postcss -c ./postcss.json"
   },
   "author": "",
