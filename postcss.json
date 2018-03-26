@@ -1,9 +1,0 @@
-{
-  "use": [
-    "postcss-nested",
-    "postcss-simple-vars",
-    "postcss-import"
-  ],
-  "input": "src/stylesheets/main.css",
-  "output": "dist/bundle.css"
-}
