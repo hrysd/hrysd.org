@@ -1,0 +1,26 @@
+html {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: #37474f;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: repeating-linear-gradient(45deg, #a3e9a4 0% 5%, transparent 5% 10%);
+}
+
+#__next {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
+}

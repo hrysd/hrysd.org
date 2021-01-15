@@ -1,0 +1,24 @@
+{
+  "name": "hrysd.org",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/hrysd/hrysd.org",
+  "author": "Hiroshi Yoshida <hrysd22@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
+    "sass": "^1.32.4",
+    "typescript": "^4.1.3"
+  }
+}

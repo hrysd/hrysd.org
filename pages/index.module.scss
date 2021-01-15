@@ -1,0 +1,53 @@
+.Main {
+  max-width: 680px;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+
+  &Header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &Body {
+    display: flex;
+    flex-direction: row;;
+
+    section {
+      padding: 2rem;
+    }
+
+    section:first-child {
+      text-align: center;
+      border-right: 1px solid #37474f;
+    }
+  }
+
+  &Sns {
+    li {
+      display: inline-block;
+
+      &:first-child {
+        &:after {
+          margin: 0 .5rem;
+          content: '/'
+        }
+      }
+    }
+  }
+
+  &Links {
+    li {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+
+      a {
+        color: #2c3e50;
+        text-decoration: none;
+      }
+    }
+  }
+}
