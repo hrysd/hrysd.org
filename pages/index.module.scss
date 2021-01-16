@@ -12,7 +12,11 @@
 
   &Body {
     display: flex;
-    flex-direction: row;;
+    flex-direction: row;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
 
     section {
       padding: 2rem;
@@ -20,11 +24,22 @@
 
     section:first-child {
       text-align: center;
-      border-right: 1px solid #37474f;
+
+      @media (width > 550px) {
+        border-right: 1px solid #efefef;
+      }
+
+      @media (width <= 550px) {
+        border-bottom: 1px solid #efefef;
+      }
     }
   }
 
-  &Sns {
+  &Profile{
+    img {
+      border-radius: 80%;
+    }
+
     li {
       display: inline-block;
 
@@ -37,16 +52,16 @@
     }
   }
 
-  &Links {
+  &URLs{
+    p {
+      text-align: center;
+    }
+
     li {
-      font-size: 1.5rem;
-      font-weight: bold;
-      line-height: 2rem;
       margin-bottom: 1rem;
 
-      a {
-        color: #2c3e50;
-        text-decoration: none;
+      span {
+        margin-right: .5rem;
       }
     }
   }
