@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './index.module.scss';
 
 import Emoji from '../components/Emoji';
@@ -12,7 +11,7 @@ export default function Index() {
 
       <div className={styles.MainBody}>
         <section className={styles.MainProfile}>
-          <Image src='/icon.png' alt='icon' width={100} height={100} />
+          <img src='/icon.png' alt='icon' width={100} height={100} />
 
           <ul>
             <li>
