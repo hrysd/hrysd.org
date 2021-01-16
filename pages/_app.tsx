@@ -1,4 +1,4 @@
-import '../assets/stylesheets/styles.css'
+import '../assets/stylesheets/styles.scss'
 import Layout from '../layouts'
 
 export default function HrysdOrg({ Component, pageProps }) {
