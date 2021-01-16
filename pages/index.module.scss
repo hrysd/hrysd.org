@@ -1,0 +1,72 @@
+.Main {
+  max-width: 680px;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+
+  &Header {
+    text-align: center;
+    margin-bottom: 1rem;
+    height: 60px;
+    background-image: url('/at.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &Body {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    section:first-child {
+      text-align: center;
+
+      @media (width > 550px) {
+        border-right: 1px solid #efefef;
+      }
+
+      @media (width <= 550px) {
+        border-bottom: 1px solid #efefef;
+      }
+    }
+  }
+
+  &Profile{
+    img {
+      border-radius: 80%;
+    }
+
+    li {
+      display: inline-block;
+
+      &:first-child {
+        &:after {
+          margin: 0 .5rem;
+          content: '/'
+        }
+      }
+    }
+  }
+
+  &URLs{
+    p {
+      text-align: center;
+    }
+
+    li {
+      margin-bottom: 1rem;
+
+      span {
+        margin-right: .5rem;
+      }
+    }
+  }
+}

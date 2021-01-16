@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+html {
+  font-family: 'Inconsolata', Meiryo, Helvetica, monospace;
+  color: #37474f;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: repeating-linear-gradient(45deg, #a3e9a4 0% 5%, transparent 5% 10%);
+}
+
+#__next {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #2c3e50;
+  text-decoration: underline;
+  letter-spacing: -0.3px;
+}
+
+p {
+  margin: 0px;
+}
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
