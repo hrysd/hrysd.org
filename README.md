@@ -1,2 +1,3 @@
-# kanda.uno
-http://kanda.uno
+# hrysd.org
+
+https://hrysd.org
