@@ -7,7 +7,11 @@
 
   &Header {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    height: 60px;
+    background-image: url('/at.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &Body {

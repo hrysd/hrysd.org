@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <main className={styles.Main}>
       <header className={styles.MainHeader}>
-        <h1>@hrysd</h1>
+        <h1>hrysd</h1>
       </header>
 
       <div className={styles.MainBody}>
