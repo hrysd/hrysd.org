@@ -14,6 +14,10 @@ export default function Layout({children}) {
       </Head>
 
       {children}
+
+      <footer>
+        (C) 2012 ~ @hrysd.
+      </footer>
     </>
   );
 }

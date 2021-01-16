@@ -24,6 +24,11 @@ body {
   justify-content: center;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 ul {
   padding-left: 0px;
 }
