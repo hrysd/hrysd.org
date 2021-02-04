@@ -5,6 +5,7 @@ import config from '../config.js'
 class MyDocument extends Document {
   render() {
     const isProduction = process.env.NODE_ENV === 'production';
+    const shouldRenderScripts = this.props.unstable_runtimeJS || isProduction;
 
     return (
       <Html lang='ja'>
@@ -17,7 +18,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          {isProduction ? null : <NextScript />}
+          {shouldRenderScripts ? null : <NextScript />}
         </body>
       </Html>
     )
