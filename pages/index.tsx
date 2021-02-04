@@ -2,6 +2,10 @@ import styles from './index.module.scss';
 
 import Emoji from '../components/Emoji';
 
+export const config = {
+  unstable_runtimeJS: false
+};
+
 export default function Index() {
   return (
     <main className={styles.Main}>
