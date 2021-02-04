@@ -4,6 +4,8 @@ import config from '../config.js'
 
 class MyDocument extends Document {
   render() {
+    const isProduction = process.env.NODE_ENV === 'production';
+
     return (
       <Html lang='ja'>
         <Head>
@@ -15,7 +17,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          <NextScript />
+          {isProduction ? null : <NextScript />}
         </body>
       </Html>
     )
